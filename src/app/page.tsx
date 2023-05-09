@@ -1,18 +1,19 @@
 'use client'
-import styled from 'styled-components'
-import { MenuFold } from '@styled-icons/remix-fill'
+import * as S from './styles';
+import { MenuFold } from '@styled-icons/remix-fill';
 
-const Header = styled.h1`
-color:red;`
+
 
 export default function Home() {
   return (
-    <nav>
+    <S.Navbar>
       <ul>
-        <Header>John Francis </Header>
-        <div><MenuFold /></div>
+        <S.Header>John Francis </S.Header>
+        <div>
+          <MenuFold />
+        </div>
       </ul>
-    </nav>
+    </S.Navbar>
   )
 }
 

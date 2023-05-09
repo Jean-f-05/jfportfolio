@@ -1,5 +1,5 @@
 import StyledComponentsRegistry from './lib/registry';
-
+import { Providers } from './providers';
 
 export const metadata = {
   title: 'Jean \'s Portfolio ',
@@ -13,7 +13,10 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <StyledComponentsRegistry>{children}</StyledComponentsRegistry>
+
+      <StyledComponentsRegistry>
+        <Providers>{children}</Providers>
+      </StyledComponentsRegistry>
     </html>
   )
 }
