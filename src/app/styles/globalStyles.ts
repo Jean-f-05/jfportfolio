@@ -14,8 +14,8 @@ html {
 };
 
 body {
-    font-family: 'Lato', sans-serif;
-    background-color: #FCE2DB;
+    
+    background-color: #FFF;
     overflow-x: hidden;
 };
 
