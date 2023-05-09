@@ -20,8 +20,7 @@ body {
 };
 
 p, a{
-    font-size: 2rem;
-    line-height: 1rem;
+    
     cursor: pointer;
   };
 
