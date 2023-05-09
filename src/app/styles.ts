@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 import Image from 'next/image';
-import layer from "../../public/layer.svg"
+
 
 
 export const Navbar = styled.nav`
@@ -45,19 +45,11 @@ export const MainImage = styled(Image)`
     margin-right: -100px;
 `
 
-export const Description = styled.div`
+export const PersonalDescription = styled.div`
     background-image: url("/layer.png");
-    padding: 2rem 3rem 3rem 3rem;
+    padding: 2rem 3rem 6rem 3rem;
     margin-bottom: 3rem;
     position: relative;
-    
-    /* & :before{
-        content: url("/11.png");
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        clip-path: circle(50% at 50% 50%);
-    } */
 `
 
 export const Paragraph = styled.p`
