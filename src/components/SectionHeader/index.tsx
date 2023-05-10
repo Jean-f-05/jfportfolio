@@ -2,13 +2,14 @@ import * as S from "./styles"
 
 export type SectionHeaderProps = {
     text: string,
-    align?: "left" | "center" | "right"
+    color?: "blue" | "white",
+    align?: "left" | "center" | "right",
 }
 
 
-const SectionHeader = ({ text, align = "left" }: SectionHeaderProps) => {
+const SectionHeader = ({ text, align = "left", color = "white" }: SectionHeaderProps) => {
     return (
-        <S.Header align={align} dangerouslySetInnerHTML={{ __html: text }}></S.Header>
+        <S.Header align={align} dangerouslySetInnerHTML={{ __html: text }} color={color}></S.Header>
     )
 }
 
