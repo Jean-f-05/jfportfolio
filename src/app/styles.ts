@@ -20,7 +20,6 @@ export const Header = styled.h1`
 `
 
 export const Main = styled.main`
-    height: 60rem;
     background-color: #F7EDE7;
 `
 
@@ -48,8 +47,6 @@ export const MainImage = styled(Image)`
 export const PersonalDescription = styled.div`
     background-image: url("/layer.png");
     padding: 2rem 3rem 6rem 3rem;
-    margin-bottom: 3rem;
-    position: relative;
 `
 
 export const Paragraph = styled.p`
@@ -70,5 +67,46 @@ export const Images = styled.div`
 `
 
 export const ThumbImage = styled(Image)`
-clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
+    clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
+`
+
+export const StackDescription = styled.div`
+    padding: 2rem 3rem 6rem 3rem;
+    background-color: #FFF;
+    position: relative;
+    background-color: #F9F6F1;
+    background-image:
+    linear-gradient(to bottom, rgba(245, 246, 252, 0.52), rgba(18, 60, 115, 0.73)),
+    url("/lighthouse.webp");
+
+   
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position:bottom;
+   
+`
+
+export const SectionImage = styled.img`
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 10;
+`
+
+export const SectionList = styled.ul`
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 2rem;
+    margin-top: 2rem;
+`
+
+export const ListEl = styled.li`
+    z-index: 15;
+
+    & svg {
+        border: 3px solid #123C73;
+        background-color: white;
+        padding: 0.3rem;    
+   }
 `

@@ -1,6 +1,8 @@
 'use client'
 import SectionHeader from '../components/SectionHeader/index';
 import { MenuFold } from '@styled-icons/remix-fill';
+import { ReactLogo, Html5, Css3, Javascript, Nodejs } from '@styled-icons/boxicons-logos';
+import { Mysql, Nextdotjs, Styledcomponents } from '@styled-icons/simple-icons';
 import * as S from './styles';
 
 
@@ -35,7 +37,35 @@ export default function Home() {
             <S.ThumbImage height={230} width={230} alt='a watercolor painting of a book and a hot coffee' src={"/bookandcoffee.webp"} />
           </S.Images>
         </S.PersonalDescription>
-
+        <S.StackDescription>
+          <SectionHeader text="The Stack <span> !</span>" color="blue" />
+          <S.SectionList>
+            <S.ListEl>
+              <ReactLogo size={85} color='#ADD8E6' />
+            </S.ListEl>
+            <S.ListEl>
+              <Html5 size={85} color='#FF5733' />
+            </S.ListEl>
+            <S.ListEl>
+              <Css3 size={85} color='#6082B6' />
+            </S.ListEl>
+            <S.ListEl>
+              <Javascript size={85} color='#FFD700' title={"Javascript Icon"} />
+            </S.ListEl>
+            <S.ListEl>
+              <Nodejs size={85} color='#478778' title={"NodeJs Icon"} />
+            </S.ListEl>
+            <S.ListEl>
+              <Mysql size={85} color='#6F8FAF' title={"Mysql Icon"} />
+            </S.ListEl>
+            <S.ListEl>
+              <Nextdotjs size={85} color='#353935' title={"NextJs Icon"} />
+            </S.ListEl>
+            <S.ListEl>
+              <Styledcomponents size={85} color='#353935' title={"Styled Components Icon"} />
+            </S.ListEl>
+          </S.SectionList>
+        </S.StackDescription>
       </S.Main>
 
     </>
