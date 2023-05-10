@@ -9,7 +9,9 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@styled-icons/boxicons-logos": "^10.47.0",
     "@styled-icons/remix-fill": "^10.46.0",
+    "@styled-icons/simple-icons": "^10.46.0",
     "@types/node": "20.1.1",
     "@types/react": "18.2.6",
     "@types/react-dom": "18.2.4",
