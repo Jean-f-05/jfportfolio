@@ -20,9 +20,12 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className={koulen.className}>
-
       <StyledComponentsRegistry>
-        <Providers>{children}</Providers>
+        <Providers>
+          <body>
+            {children}
+          </body>
+        </Providers>
       </StyledComponentsRegistry>
     </html>
   )
