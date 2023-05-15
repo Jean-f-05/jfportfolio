@@ -1,8 +1,6 @@
 import styled from 'styled-components'
 import Image from 'next/image';
 
-
-
 export const Navbar = styled.nav`
     padding: 1.4rem;
     background-color: #123C73;
@@ -35,8 +33,8 @@ export const HeroHeader = styled.h2`
     color: #123C73;
 
     & span{
-        color:red;
-    }
+        color:#D2042D;
+    }  
 `
 
 export const MainImage = styled(Image)`
@@ -46,6 +44,7 @@ export const MainImage = styled(Image)`
 
 export const PersonalDescription = styled.div`
     background-image: url("/layer.png");
+    
     padding: 2rem 3rem 6rem 3rem;
 `
 
@@ -103,10 +102,51 @@ export const SectionList = styled.ul`
 
 export const ListEl = styled.li`
     z-index: 15;
+    box-shadow: 0 5px 15px -5px rgba(0, 0, 0, 0.1);
 
     & svg {
         border: 3px solid #123C73;
         background-color: white;
         padding: 0.3rem;    
+        box-shadow: 0 5px 15px -5px rgba(0, 0, 0, 0.1);
    }
+`
+
+export const Portfolio = styled.div`
+    padding: 2rem 3rem 6rem 3rem;
+     background-image: url("/layer2.png");
+     background-repeat: repeat-y;
+     background-position: right; 
+`
+
+export const PortfolioContainer = styled.div`
+   /*  opacity: 0; */
+    max-width: 100rem;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 3rem;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    row-gap: 2rem;
+    column-gap: 2rem;
+
+    @media (max-width: 68.75em) {
+        grid-template-columns: repeat(3, 1fr);
+        max-width: 80rem;
+    }
+
+    @media (max-width: 48.12em) {
+        grid-template-columns: repeat(2, 1fr);
+        max-width: 60rem;
+    }
+
+    @media (max-width: 31.25em) {
+        grid-template-columns: 1fr;
+        max-width: 30rem;
+    }
+
+    
+
+
 `
