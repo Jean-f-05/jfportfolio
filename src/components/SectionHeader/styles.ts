@@ -14,7 +14,7 @@ ${({align, color})=>css`
     color: ${color === "white"? "#F7EDE7": "#123C73"};
 
     & span{
-        color:red;
+        color: #D2042D;
     }
 `}
 `

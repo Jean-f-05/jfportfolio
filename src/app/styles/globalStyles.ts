@@ -25,12 +25,15 @@ p, a{
   };
 
 a {
-    
+    & span {
+    color: #D2042D
+    }
   }
 
   li {
     list-style-type: none;
   }
+
 `;
  
 export default GlobalStyle;
