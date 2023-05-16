@@ -19,16 +19,17 @@ body {
     overflow-x: hidden;
 };
 
-p, a{
-    
+p, a{  
     cursor: pointer;
   };
 
 a {
-    & span {
+  text-decoration: none;
+  }
+
+  span {
     color: #D2042D
     }
-  }
 
   li {
     list-style-type: none;
