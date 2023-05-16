@@ -1,9 +1,15 @@
 import styled from 'styled-components'
 import Image from 'next/image';
+import Link from 'next/link';
 
 export const Navbar = styled.nav`
     padding: 1.4rem;
     background-color: #123C73;
+    display: block;
+    position: fixed;
+    width: 100%;
+    z-index: 30;
+    border-bottom: 3px solid #fff;
 `
 
 export const List = styled.ul`
@@ -12,13 +18,14 @@ export const List = styled.ul`
     align-items: center;
 `
 
-export const Header = styled.h1`
+export const Header = styled(Link)`
     font-size: 2.4rem;
     color:#F7EDE7;
 `
 
 export const Main = styled.main`
     background-color: #F7EDE7;
+    padding-top: 7.4rem;
 `
 
 export const Hero = styled.div`
@@ -26,6 +33,7 @@ export const Hero = styled.div`
     justify-content: space-around;
     background-color: #F7EDE7;
     overflow-x: hidden;
+
     `
 export const HeroHeader = styled.h2`
     font-size: 2.4rem;
@@ -44,8 +52,8 @@ export const MainImage = styled(Image)`
 
 export const PersonalDescription = styled.div`
     background-image: url("/layer.png");
-    
     padding: 2rem 3rem 6rem 3rem;
+    scroll-margin-top: 7.4rem;
 `
 
 export const Paragraph = styled.p`
@@ -77,12 +85,10 @@ export const StackDescription = styled.div`
     background-image:
     linear-gradient(to bottom, rgba(245, 246, 252, 0.52), rgba(18, 60, 115, 0.73)),
     url("/lighthouse.webp");
-
-   
     background-size: contain;
     background-repeat: no-repeat;
     background-position:bottom;
-   
+    scroll-margin-top: 7.4rem;
 `
 
 export const SectionImage = styled.img`
@@ -114,13 +120,13 @@ export const ListEl = styled.li`
 
 export const Portfolio = styled.div`
     padding: 2rem 3rem 6rem 3rem;
-     background-image: url("/layer2.png");
-     background-repeat: repeat-y;
-     background-position: right; 
+    background-image: url("/layer2.png");
+    background-repeat: repeat-y;
+    background-position: right; 
+    scroll-margin-top: 7.4rem;
 `
 
 export const PortfolioContainer = styled.div`
-   /*  opacity: 0; */
     max-width: 100rem;
     margin-right: auto;
     margin-left: auto;
