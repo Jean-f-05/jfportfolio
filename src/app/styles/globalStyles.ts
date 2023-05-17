@@ -37,6 +37,23 @@ h1,h2,h3,h4,h5,h6{
     list-style-type: none;
   }
 
+  .Typewriter{
+    & span {
+    font-size: 2.4rem;
+    color: #123C73;
+    line-height: 1.5;
+    font-weight: 800;
+   
+    @media (max-width: 370px) {
+    font-size: 2rem;
+  } 
+    & 
+      span {
+      color:red
+    }
+  
+    }
+  }
 `;
  
 export default GlobalStyle;

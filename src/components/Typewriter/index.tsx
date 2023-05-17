@@ -1,5 +1,5 @@
-import * as S from "./styles"
 import Typewriter from 'typewriter-effect';
+
 const TypeWriter = () => {
     return (<Typewriter
         onInit={(typewriter) => {
