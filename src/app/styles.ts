@@ -29,12 +29,16 @@ export const Main = styled.main`
 `
 
 export const Hero = styled.div`
-    display: flex;
-    justify-content: space-around;
     background-color: #F7EDE7;
     overflow-x: hidden;
-
+    height: 41rem;
+    position: relative;
     `
+export const TypeWriterWrapper = styled.div`
+    width: 50%;
+    padding: 3rem 0 0 3rem;
+`
+
 export const HeroHeader = styled.h2`
     font-size: 2.4rem;
     padding: 3rem 0 0 3rem;
@@ -46,8 +50,13 @@ export const HeroHeader = styled.h2`
 `
 
 export const MainImage = styled(Image)`
-    clip-path: polygon(25% 0%, 100% 0%, 100% 100%, 0% 100%);
-    margin-right: -100px;
+    position: absolute;
+    bottom: 0;
+    right: -100px !important;
+    left: unset !important;
+    clip-path: polygon(40% 0, 100% 0, 100% 60%, 100% 100%, 0 100%, 22% 77%, 39% 60%);
+   /*  clip-path: polygon(25% 0%, 100% 0%, 100% 100%, 0% 100%); */
+    
 `
 
 export const PersonalDescription = styled.div`

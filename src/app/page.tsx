@@ -7,6 +7,7 @@ import PortfolioElement from "../components/PortfolioElement/index"
 import * as S from './styles';
 import { useState, useRef } from 'react';
 import Menu from '@/components/Menu';
+import TypeWriter from "../components/Typewriter/index"
 
 export default function Home() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -27,10 +28,10 @@ export default function Home() {
       <S.Main>
         <Menu isOpen={menuOpen} setMenu={setMenuOpen} sections={{ whoSection, stackSection, portfolioSection }} />
         <S.Hero>
-          <div>
-            <S.HeroHeader>Hello there, I&apos;m Jean<span>! </span> Self-thaught web developer<span>. </span> </S.HeroHeader>
-          </div>
-          <S.MainImage src={"/ilustration_char_1.webp"} alt='image 1' width={400} height={420}></S.MainImage>
+          <S.TypeWriterWrapper>
+            <TypeWriter />
+          </S.TypeWriterWrapper>
+          {<S.MainImage src={"/hero.webp"} alt='image 1' height={400} width={400}></S.MainImage>}
         </S.Hero>
         <S.PersonalDescription ref={whoSection}>
           <SectionHeader text="Who am I <span> ? </span>" />
