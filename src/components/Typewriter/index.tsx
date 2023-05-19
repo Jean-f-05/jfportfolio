@@ -12,9 +12,9 @@ const TypeWriter = () => {
                 .typeString('With the looks of a 25 years old<span>.</span> ')
                 .pauseFor(1000)
                 .typeString('Under my belt, around 3 years of experience<span>.</span>')
-                .pauseFor(1000)
-                .changeDeleteSpeed(0.1)
-                .deleteChars(121)
+                /* .pauseFor(1000) */
+                /*  .changeDeleteSpeed(0.1) */
+                /* .deleteChars(122) */
                 .start();
         }}
     />)
