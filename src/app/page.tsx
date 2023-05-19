@@ -7,7 +7,11 @@ import PortfolioElement from "../components/PortfolioElement/index"
 import * as S from './styles';
 import { useState, useRef } from 'react';
 import Menu from '@/components/Menu';
-import TypeWriter from "../components/Typewriter/index"
+import TypeWriter from "../components/Typewriter/index";
+import 'slick-carousel/slick/slick.css';
+import 'slick-carousel/slick/slick-theme.css';
+import Carousel from '@/components/Carousel';
+
 
 export default function Home() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -35,17 +39,15 @@ export default function Home() {
         </S.Hero>
         <S.PersonalDescription ref={whoSection}>
           <SectionHeader text="Who am I <span> ? </span>" />
-          <S.Paragraph>Born in Luxembourg<span>, </span> living in Portugal<span>. </span> Because one picture is worth a thousand words<span>, </span>
+          <S.Paragraph>Born in Luxembourg<span>, </span> living in Portugal<span>. </span> Because pictures are worth a thousand words<span>, </span>
             Check the carousel below to know more about me<span> .</span>
           </S.Paragraph>
-          <S.Images>
-            <S.ThumbImage height={230} width={230} alt='a watercolor painting of a dog with a red bandana near the shore' src={"/dogo.webp"} />
-            <S.ThumbImage height={230} width={230} alt='a watercolor painting of a coder working sitting at his desk' src={"/desk.webp"} />
-            <S.ThumbImage height={230} width={230} alt='a watercolor painting of a gamer playing a videogame with enthusiasm' src={"/gamer.webp"} />
-            <S.ThumbImage height={230} width={230} alt='a watercolor painting of a basketball player aiming at the hoop' src={"/basket.webp"} />
-            <S.ThumbImage height={230} width={230} alt='a watercolor painting of a book and a hot coffee' src={"/bookandcoffee.webp"} />
-          </S.Images>
+          <S.SliderWrapper>
+            <Carousel />
+          </S.SliderWrapper>
+
         </S.PersonalDescription>
+
         <S.StackDescription ref={stackSection}>
           <SectionHeader text="The Stack<span>...</span>" color="blue" />
           <S.SectionList>

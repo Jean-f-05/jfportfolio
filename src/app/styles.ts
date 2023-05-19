@@ -2,6 +2,8 @@ import styled from 'styled-components'
 import Image from 'next/image';
 import Link from 'next/link';
 
+
+
 export const Navbar = styled.nav`
     padding: 1.4rem;
     background-color: #123C73;
@@ -65,6 +67,11 @@ export const PersonalDescription = styled.div`
     scroll-margin-top: 7.4rem;
 `
 
+
+export const SliderWrapper = styled.div`
+    margin-top: 4rem;
+`
+
 export const Paragraph = styled.p`
     font-size: 1.8rem;
     color:#F7EDE7;
@@ -82,9 +89,7 @@ export const Images = styled.div`
     justify-content: space-evenly;   
 `
 
-export const ThumbImage = styled(Image)`
-    clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
-`
+
 
 export const StackDescription = styled.div`
     padding: 2rem 3rem 6rem 3rem;
