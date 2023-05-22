@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 import Image from 'next/image';
 import Link from 'next/link';
-
+import {Wrapper} from "../components/UI/Wrapper/styles";
 
 
 export const Navbar = styled.nav`
@@ -28,9 +28,10 @@ export const Header = styled(Link)`
 export const Main = styled.main`
     background-color: #F7EDE7;
     padding-top: 7.4rem;
+    overflow-x: hidden;
 `
 
-export const Hero = styled.div`
+export const Hero = styled(Wrapper)`
     background-color: #F7EDE7;
     overflow-x: hidden;
     height: 41rem;
@@ -38,7 +39,6 @@ export const Hero = styled.div`
     `
 export const TypeWriterWrapper = styled.div`
     width: 50%;
-    padding: 3rem 0 0 3rem;
 `
 
 export const HeroHeader = styled.h2`
@@ -57,16 +57,12 @@ export const MainImage = styled(Image)`
     right: -100px !important;
     left: unset !important;
     clip-path: polygon(40% 0, 100% 0, 100% 60%, 100% 100%, 0 100%, 22% 77%, 39% 60%);
-   /*  clip-path: polygon(25% 0%, 100% 0%, 100% 100%, 0% 100%); */
-    
 `
 
-export const PersonalDescription = styled.div`
+export const PersonalDescription = styled(Wrapper)`
     background-image: url("/layer.png");
-    padding: 2rem 3rem 6rem 3rem;
     scroll-margin-top: 7.4rem;
 `
-
 
 export const SliderWrapper = styled.div`
     margin-top: 4rem;
@@ -91,8 +87,7 @@ export const Images = styled.div`
 
 
 
-export const StackDescription = styled.div`
-    padding: 2rem 3rem 6rem 3rem;
+export const StackDescription = styled(Wrapper)`
     background-color: #FFF;
     position: relative;
     background-color: #F9F6F1;
@@ -164,8 +159,4 @@ export const PortfolioContainer = styled.div`
         grid-template-columns: 1fr;
         max-width: 30rem;
     }
-
-    
-
-
 `
