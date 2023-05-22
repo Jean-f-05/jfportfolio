@@ -31,7 +31,6 @@ const Menu = ({ isOpen, setMenu, sections }: MenuProps) => {
                         onClick={(e) => handleElementClick(e)}
                         id={"whoSection"}>
                         Who am I <span>?</span>
-
                     </S.MenuElement>
                 </li>
                 <li>
@@ -39,7 +38,6 @@ const Menu = ({ isOpen, setMenu, sections }: MenuProps) => {
                         onClick={(e) => handleElementClick(e)}
                         id={"stackSection"}>
                         The stack <span>...</span>
-
                     </S.MenuElement>
                 </li>
                 <li>
@@ -47,7 +45,6 @@ const Menu = ({ isOpen, setMenu, sections }: MenuProps) => {
                         onClick={(e) => handleElementClick(e)}
                         id={"portfolioSection"}>
                         My Portfolio <span>!</span>
-
                     </S.MenuElement>
                 </li>
 

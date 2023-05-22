@@ -10,13 +10,13 @@ const GlobalStyle = createGlobalStyle`
 
 html {
     font-size: 62.5%;
-    overflow-x: hidden;
+    overflow-x: hidden; 
 };
 
 body {
     
     background-color: #FFF;
-    overflow-x: hidden;
+    overflow-x: hidden; 
 };
 
 p, a{  
