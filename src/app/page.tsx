@@ -3,7 +3,6 @@ import SectionHeader from '../components/SectionHeader/index';
 import { MenuFold, Close } from '@styled-icons/remix-fill';
 import { ReactLogo, Html5, Css3, Javascript, Nodejs } from '@styled-icons/boxicons-logos';
 import { Mysql, Nextdotjs, Styledcomponents, Jest } from '@styled-icons/simple-icons';
-import PortfolioElement from "../components/PortfolioElement/index"
 import * as S from './styles';
 import { useState, useRef } from 'react';
 import Menu from '@/components/Menu';
@@ -12,6 +11,7 @@ import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import Carousel from '@/components/Carousel';
 import ProjectElement from '@/components/ProjectElement';
+import ContactMe from '@/components/ContactMe';
 
 
 export default function Home() {
@@ -19,6 +19,7 @@ export default function Home() {
   const whoSection = useRef(null);
   const stackSection = useRef(null);
   const portfolioSection = useRef(null);
+  const footerSection = useRef(null);
 
   return (
     <>
@@ -31,13 +32,14 @@ export default function Home() {
         </S.List>
       </S.Navbar>
       <S.Main>
-        <Menu isOpen={menuOpen} setMenu={setMenuOpen} sections={{ whoSection, stackSection, portfolioSection }} />
+        <Menu isOpen={menuOpen} setMenu={setMenuOpen} sections={{ whoSection, stackSection, portfolioSection, footerSection }} />
         <S.Hero>
           <S.TypeWriterWrapper>
             <TypeWriter />
           </S.TypeWriterWrapper>
           {<S.MainImage src={"/hero.webp"} alt='image 1' height={400} width={400}></S.MainImage>}
         </S.Hero>
+        <ContactMe />
         <S.PersonalDescription ref={whoSection}>
           <SectionHeader text="Who am I <span> ? </span>" />
           <S.Paragraph>Born in Luxembourg<span>, </span> living in Portugal<span>. </span> Because pictures are worth a thousand words<span>, </span>
@@ -46,7 +48,6 @@ export default function Home() {
           <S.SliderWrapper>
             <Carousel />
           </S.SliderWrapper>
-
         </S.PersonalDescription>
 
         <S.StackDescription ref={stackSection}>
@@ -80,11 +81,10 @@ export default function Home() {
               <Jest size={85} color='#A95C68' title={"Styled Components Icon"} />
             </S.ListEl>
           </S.SectionList>
-
         </S.StackDescription>
+
         <S.Portfolio ref={portfolioSection}>
           <SectionHeader text='My Portfolio <span> !</span>' align='left' color='blue' />
-
           <S.PortfolioContainer>
             <ProjectElement
               type={'Web App'}
@@ -103,11 +103,9 @@ export default function Home() {
               linkRef="https://stellular-pasca-997184.netlify.app/"
               stickers={["NextJS", "Typescript", "Styled Components"]}
             />
-
           </S.PortfolioContainer>
         </S.Portfolio>
-      </S.Main >
-
+      </S.Main>
     </>
   )
 }
