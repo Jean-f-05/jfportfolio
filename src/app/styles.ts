@@ -134,9 +134,8 @@ export const ListEl = styled.li`
 
 export const Portfolio = styled.div`
     padding: 2rem 3rem 6rem 3rem;
-    background-image: url("/layer2.png");
-    background-repeat: repeat-y;
-    background-position: right; 
+    background-image: url("/bgpattern.png");
+    background-repeat: repeat;
     scroll-margin-top: 7.4rem;
 `
 

@@ -49,7 +49,7 @@ h1,h2,h3,h4,h5,h6{
   } 
     & 
       span {
-      color:red
+      color:#D2042D;
     }
   
     }

@@ -11,6 +11,7 @@ import TypeWriter from "../components/Typewriter/index";
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import Carousel from '@/components/Carousel';
+import ProjectElement from '@/components/ProjectElement';
 
 
 export default function Home() {
@@ -79,38 +80,30 @@ export default function Home() {
               <Jest size={85} color='#A95C68' title={"Styled Components Icon"} />
             </S.ListEl>
           </S.SectionList>
+
         </S.StackDescription>
         <S.Portfolio ref={portfolioSection}>
           <SectionHeader text='My Portfolio <span> !</span>' align='left' color='blue' />
+
           <S.PortfolioContainer>
-            <PortfolioElement
-              key={"portfolio1"}
-              text="My version of the pokedex<span>.</span> Built from scratch<span>,</span> 100% original design<span>!</span>"
-              imgLink="/dogo.webp"
-              url="https://stellular-pasca-997184.netlify.app/"
+            <ProjectElement
+              type={'Web App'}
+              image={{ alt: "A snippet of the top part of a pokedex webpage", url: "/dogo.webp" }}
+              name="Pokedex"
+              description='My version of the pokedex. React, Axios (RESTful API), state management, styled components'
+              linkRef="https://stellular-pasca-997184.netlify.app/"
+              stickers={["React", "Styled Components", "Html5"]}
             />
-            <PortfolioElement
-              key={"portfolio2"}
-              text="My version of the pokedex<span>.</span> Built from scratch<span>,</span> 100% original design<span>!</span>"
-              imgLink="/dogo.webp"
-              url="https://stellular-pasca-997184.netlify.app/"
 
+            <ProjectElement
+              type={'Landing Page'}
+              image={{ alt: "A snippet of the top part of the portfolio landing page", url: "/dogo.webp" }}
+              name="My portfolio"
+              description='Latest version of my portfolio. Your are already there...'
+              linkRef="https://stellular-pasca-997184.netlify.app/"
+              stickers={["NextJS", "Typescript", "Styled Components"]}
             />
-            <PortfolioElement
-              key={"portfolio2"}
-              text="My version of the pokedex<span>.</span> Built from scratch<span>,</span> 100% original design<span>!</span>"
-              imgLink="/dogo.webp"
-              url="https://stellular-pasca-997184.netlify.app/"
 
-            />
-            <PortfolioElement
-              key={"portfolio2"}
-              text="My version of the pokedex<span>.</span> Built from scratch<span>,</span> 100% original design<span>!</span>"
-              imgLink="/dogo.webp"
-              url="https://stellular-pasca-997184.netlify.app/"
-
-            />
-            {/*  <PortfolioElement key={"portfolio2"} /> */}
           </S.PortfolioContainer>
         </S.Portfolio>
       </S.Main >
