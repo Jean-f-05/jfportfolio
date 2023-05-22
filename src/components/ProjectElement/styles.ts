@@ -32,6 +32,7 @@ export const ProjectHeader = styled.div`
     align-items: center;
     justify-content: flex-end;
     margin-top: 0.5rem;
+    margin-bottom: 1rem;
 `
 
 export const ProjectText = styled.h5`
@@ -43,7 +44,6 @@ export const ProjectGit = styled(Link)``
 
 export const ProjectName = styled.strong`
     font-size: 2rem;
-    margin-top: 1rem;
     font-weight: 500;      
     position: relative;
     

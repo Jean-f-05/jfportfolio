@@ -14,7 +14,11 @@ type ImageProps = {
     alt: string,
     url: string
 }
-const Sticker = ({ children }: any) => {
+
+type StickerProps = {
+    children: JSX.Element | string | string[],
+}
+const Sticker = ({ children }: StickerProps) => {
     return (
         <S.StickerWrapper>
             <S.StickerText>{children}</S.StickerText>
