@@ -2,7 +2,7 @@
 import SectionHeader from '../components/SectionHeader/index';
 import { MenuFold, Close } from '@styled-icons/remix-fill';
 import { ReactLogo, Html5, Css3, Javascript, Nodejs } from '@styled-icons/boxicons-logos';
-import { Mysql, Nextdotjs, Styledcomponents, Jest } from '@styled-icons/simple-icons';
+import { Mysql, Nextdotjs, Styledcomponents, Jest, Typescript } from '@styled-icons/simple-icons';
 import * as S from './styles';
 import { useState, useRef } from 'react';
 import Menu from '@/components/Menu';
@@ -55,6 +55,9 @@ export default function Home() {
           <S.SectionList>
             <S.ListEl>
               <ReactLogo size={85} color='#ADD8E6' />
+            </S.ListEl>
+            <S.ListEl>
+              <Typescript size={85} color='#6082B6' title={"Typescript Icon"} />
             </S.ListEl>
             <S.ListEl>
               <Html5 size={85} color='#FF5733' />
